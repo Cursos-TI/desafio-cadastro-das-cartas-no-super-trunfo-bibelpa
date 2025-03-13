@@ -1,22 +1,41 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
+
+    // Atributos
+    int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
+    float area1, area2, pib1, pib2;
+
     // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
+    printf("Digite o número da população da carta 1: \n");
+    scanf("%d", &populacao1);
+
+    printf("Digite o número da população da carta 2: \n");
+    scanf("%d", &populacao2);
+
+    printf("Digite o número de pontos turísticos da carta 1: \n");
+    scanf("%d", &pontos_turisticos1);
+
+    printf("Digite o número de pontos turísticos da carta 2: \n");
+    scanf("%d", &pontos_turisticos2);
+
+    printf("Digite a área da carta 1: \n");
+    scanf("%f", &area1);
+
+    printf("Digite a área da carta 2: \n");
+    scanf("%f", &area2);
+
+    printf("Digite o PIB da carta 1: \n");
+    scanf("%f", &pib1);
+
+    printf("Digite o PIB da carta 2: \n");
+    scanf("%f", &pib2);
+
     // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Carta da cidade 1: %d \n Pontos turísticos da carta 1: %d \n Área da carta 1: %fkm² \n PIB da carta 1: %f", populacao1, pontos_turisticos1, area1, pib1);
+    printf (" \n Carta da cidade 2: %d \n Pontos turísticos da carta 2: %d \n Área da carta 2: %fkm² \n PIB da carta 2: %f", populacao2, pontos_turisticos2, area2, pib2);
+
 
     return 0;
 }
